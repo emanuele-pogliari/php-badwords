@@ -1,3 +1,11 @@
+<?php 
+
+$phrase = $_GET['phrase'];
+
+$badword = $_GET['badword'];
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,20 +16,10 @@
 </head>
 <body>
 
-<form action="results.php" method="GET" >
-  
-<div class="mb-3">
-    <label  for="" class="form-label">Sentence</label>
-    <input name="phrase" type="text" class="form-control">
-  </div>
+<?php
 
-  <div class="mb-3">
-    <label for="" class="form-label">Word to censore</label>
-    <input name="badword" type="text" class="form-control">
-  </div>
-  
-  <button type="submit" class="btn btn-primary">Censore</button>
-</form>
+echo str_replace($badword, "***", $phrase);
+?>
     
 </body>
 </html>
