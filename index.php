@@ -17,7 +17,7 @@ error_reporting(E_ALL);
 <body>
 
     <div class="form-container p-5">
-    <h1 class="text-white text-center">Badwords Censored App</h1>
+    <h1 class="text-white text-center mt-5">Badwords Censored App</h1>
         <div class="container">
             <div class="card my-card col-6 p-2 rounded-4 bg-transparent mx-auto position-absolute top-50 start-50 translate-middle ">
                 <form action="results.php" method="GET" >

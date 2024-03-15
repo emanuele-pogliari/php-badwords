@@ -19,9 +19,19 @@ $phrase_censored = str_replace($badword, "***", $phrase);
 </head>
 <body>
 
-<p>La lunghezza della parola " <?php echo $phrase ?> " è di <?php echo strlen($phrase) ?> caratteri</p>
 
-<p>La lunghezza della frase censurata " <?php echo $phrase_censored ?> " è di <?php echo strlen($phrase_censored) ?> caratteri </p>
+<div class="form-container p-5">
+    <h2 class="text-white text-center fs-1 mt-5">Results</h2>
+        <div class="container text-center d-flex">
+            <div class="card my-card col-6 px-4 py-5 rounded-4 bg-transparent mx-auto position-absolute top-50 start-50 translate-middle text-white">
+                <p class="py-2 fs-3 border-1 border-top">Phrase Inserted: <?php echo $phrase ?></p>
+                <p class="py-2 fs-3 border-1 border-bottom">Lentgh of the phrase: <?php echo strlen($phrase) ?> characters</p>
+
+                <p class="py-2 fs-3 rounded-3">Phrase censored: <?php echo $phrase_censored ?></p>
+                <p class="py-2 fs-3 border-1 border-bottom">Lentgh of the censored phrase: <?php echo strlen($phrase_censored) ?>  characters </p>
+            </div>
+        </div>
+</div>
     
 </body>
 </html>
