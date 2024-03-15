@@ -4,6 +4,8 @@ $phrase = $_GET['phrase'];
 
 $badword = $_GET['badword'];
 
+$phrase_censored = str_replace($badword, "***", $phrase);
+
 ?>
 
 <!DOCTYPE html>
@@ -16,10 +18,9 @@ $badword = $_GET['badword'];
 </head>
 <body>
 
-<?php
+<p>La lunghezza della parola " <?php echo $phrase ?> " è di <?php echo strlen($phrase) ?> caratteri</p>
 
-echo str_replace($badword, "***", $phrase);
-?>
+<p>La lunghezza della frase censurata "  <?php echo $phrase_censored ?> " è di <?php echo strlen($phrase_censored) ?> caratteri </p>
     
 </body>
 </html>

@@ -12,7 +12,8 @@
   
 <div class="mb-3">
     <label  for="" class="form-label">Sentence</label>
-    <input name="phrase" type="text" class="form-control">
+    <textarea name="phrase" type="text" class="form-control" rows="3"></textarea>
+    
   </div>
 
   <div class="mb-3">
